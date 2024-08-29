@@ -1,0 +1,17 @@
+CREATE DATABASE tutoria_exemplo;
+USE tutoria_exemplo;
+
+CREATE TABLE pessoa (
+	id INT AUTO_INCREMENT NOT NULL,
+    nome VARCHAR(50) NOT NULL,
+    cpf VARCHAR(15) UNIQUE NOT NULL,
+    PRIMARY KEY(id)
+)ENGINE = InnoDB;
+
+CREATE TABLE carro(
+	id INT AUTO_INCREMENT NOT NULL, 
+	placa VARCHAR(15) NOT NULL UNIQUE,
+	pessoa_id INT DEFAULT NULL,
+	CONSTRAINTPRIMARY fk_pessoa_carro FOREIGN KEY (pessoa_id) REFERENCES pessoa(id),
+	PRIMARY KEY(id)
+) ENGINE = InnoDB;
