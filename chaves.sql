@@ -12,6 +12,6 @@ CREATE TABLE carro(
 	id INT AUTO_INCREMENT NOT NULL, 
 	placa VARCHAR(15) NOT NULL UNIQUE,
 	pessoa_id INT DEFAULT NULL,
-	CONSTRAINTPRIMARY fk_pessoa_carro FOREIGN KEY (pessoa_id) REFERENCES pessoa(id),
+	CONSTRAINT fk_pessoa_carro FOREIGN KEY (pessoa_id) REFERENCES pessoa(id),
 	PRIMARY KEY(id)
 ) ENGINE = InnoDB;
