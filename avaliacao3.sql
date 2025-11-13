@@ -30,6 +30,7 @@ insert into construcao (id, nome, previsao_entrega) values (4, 'Pashkovskiy', '2
 insert into construcao (id, nome, previsao_entrega) values (5, 'Fornelos', '2044-05-18');
 insert into construcao (id, nome, previsao_entrega) values (6, 'Jalingo', '2036-08-17');
 insert into construcao (id, nome, previsao_entrega) values (7, 'Desespero do Aluno', '2035-04-19');
+insert into construcao (id, nome, previsao_entrega) values (8, 'Se apareceu esse resultado na questão 1 e somente esse você acertou fique tranquilo', '2068-04-19');
 
 insert into material_construcao (id, nome, valor) values (1, 'Wood', 988.97);
 insert into material_construcao (id, nome, valor) values (2, 'Plastic', 446.21);
